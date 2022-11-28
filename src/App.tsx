@@ -3,6 +3,7 @@ import "./App.css";
 import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
+import UseState from "./components/Hooks/UseState";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
@@ -93,6 +94,7 @@ function App() {
             console.log("ok ", event, id);
           }}
         />
+        <UseState />
       </div>
     </>
   );
