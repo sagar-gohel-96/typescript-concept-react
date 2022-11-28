@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./App.css";
+import Button from "./components/Button";
 import Greet from "./components/Greet";
+import Heading from "./components/Heading";
+import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
@@ -81,6 +84,15 @@ function App() {
         <Person name={PersonName} />
         <PersonList names={nameList} />
         <Status status={"success"} />
+        <Heading children={"hellow buddy"} />
+        <Oscar>
+          <Heading children="Oscar goes to paavan patel" />
+        </Oscar>
+        <Button
+          handleClick={(event, id) => {
+            console.log("ok ", event, id);
+          }}
+        />
       </div>
     </>
   );
